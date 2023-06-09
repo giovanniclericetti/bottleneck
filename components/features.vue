@@ -3,7 +3,7 @@
 
   <div class="textbox pt-5">
     <h2 class="pt-5">
-      We feel you: too many notifications, right?
+      Rethinking notifications
     </h2>
 
     <div class="d-flex justify-content-center">
