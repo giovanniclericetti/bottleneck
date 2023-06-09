@@ -1,7 +1,18 @@
 <template>
+
   <div>
+
+  <div>
+    <navbar/>
+  </div>
+
+  <div class="container">
+
+    <hero></hero>
   <Tutorial/>
-  <Hero/>
+
+    <features id="features"></features>
+  </div>
   </div>
 </template>
 
