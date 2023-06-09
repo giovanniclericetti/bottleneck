@@ -6,11 +6,10 @@
     <navbar/>
   </div>
 
-  <div class="container">
+  <div">
 
     <hero></hero>
-  <Tutorial/>
-
+    <notifications/>
     <features id="features"></features>
   </div>
   </div>

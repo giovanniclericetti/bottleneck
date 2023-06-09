@@ -1,6 +1,7 @@
 <template>
-  <div class="hero-section p-5 " >
+  <div class="hero-section p-5" >
 
+    <div style="margin-top: 15vh">
     <h1 class="mt-5 pt-5 m-0"> Bottleneck </h1>
     <div class="justify-content-center d-flex ">
     <div class="subtitle justify-content-center d-flex "><h3>AI-powered dashboard to finally receive notifications in a healthy and right way</h3></div>
@@ -8,7 +9,7 @@
 
     <div class="herodash d-flex justify-content-center mt-5"> <img class="iconfigmareduct" src="~assets/img/dashboard.png">
     </div>
-
+    </div>
   </div>
 
 </template>
@@ -42,7 +43,7 @@ h3{
 }
 
 .herodash img{
-  width: 100%;
+  height: 80vh;
 }
 
 @media (max-width: 768px) {
@@ -56,9 +57,6 @@ h3{
     font-size: 20px;
   }
 
-  .herodash img{
-    width: 120%;
-  }
 
 }
 
