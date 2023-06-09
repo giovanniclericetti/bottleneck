@@ -3,7 +3,7 @@
 <div class="nav d-flex px-5 justify-content-between align-items-center">
 
 <div>
-    Bottleneck
+    Bottleneck Logo
 </div>
 
       <div class="tabs d-none d-lg-flex" style="color: var(--color-secondary)">
