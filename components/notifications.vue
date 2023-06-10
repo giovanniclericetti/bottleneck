@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  name: "notifications",
+  name: "notifications"}
 </script>
 
 <style scoped>
