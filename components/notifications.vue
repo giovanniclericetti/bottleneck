@@ -15,15 +15,11 @@
     <div class="mt-5" >
       <img class="d-md-none" style="width: 80%" src="~assets/img/notifications.png" />
 
-      <div class="d-md-block d-none">
+      <div class="d-md-block d-none" style="background-color: pink">
 
-
-        <video
-
-          src="~assets/video/notifications.mp4"
-
-        />
-
+        <video controls style="width: 80%">
+          <source :src="require('@/assets/video/notifications.mp4')" type="video/mp4">
+        </video>
 
       </div>
     </div>
