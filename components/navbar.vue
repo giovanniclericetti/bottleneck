@@ -1,12 +1,12 @@
 <template>
 
-<div class="nav d-flex px-5 justify-content-between align-items-center">
+<div class="nav d-flex px-5 justify-content-between align-items-center ">
 
 <div>
     Bottleneck Logo
 </div>
 
-      <div class="tabs d-none d-lg-flex" style="color: var(--color-secondary)">
+      <div class="tabs d-none d-lg-flex shadow" style="color: var(--color-secondary)">
 
         <input type="radio" id="radio-1" name="tabs" checked />
 
@@ -35,7 +35,7 @@
 
 
   <div>
-    <button type="button" class="btn align-middle">
+    <button type="button" class="btn align-middle shadow-sm">
       <p>
         Download App
       </p>

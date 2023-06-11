@@ -1,20 +1,20 @@
 <template>
   <div class="notification-section pt-2 pb-5">
     <div class="textbox pt-5">
-      <h2 class="pt-5">We feel you: too many notifications, right?</h2>
+      <h2 class="pt-5">Two layers to prevent useless notifications</h2>
       <div class="d-flex justify-content-center">
-        <p style="max-width: 600px">
-          We do know how it feels to be overwhelmed by notifications. You try to
-          block them and just end up with losing precious and urgent
-          information.... or try to keep it up losing concentration and
-          deteriorating your mental health.
+        <p style="max-width: 700px">
+          Bottleneck features two different dashboard layers. One immediately shown,
+          to display the most important notifications. The other, reachable via the “go
+          deeper” button, summarises all the missed notifications, to keep you updated,
+          without having you feel overwhelmt.
         </p>
       </div>
     </div>
 
     <div class="my-5 pb-5">
       <div>
-        <video ref="videoElement" style="width: 60%">
+        <video ref="videoElementLayers" style="width: 60%">
           <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
         </video>
       </div>
@@ -24,13 +24,13 @@
 
 <script>
 export default {
-  name: "notifications",
+  name: "layers",
   mounted() {
     this.setupVideoScroll();
   },
   methods: {
     setupVideoScroll() {
-      const videoElement = this.$refs.videoElement;
+      const videoElementLayers = this.$refs.videoElementLayers;
       let previousScrollTop = 0;
       let rafId = null;
       let videoVisible = false;
@@ -39,16 +39,16 @@ export default {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         const scrollDelta = scrollTop - previousScrollTop;
 
-        if (!videoVisible && this.isElementInViewport(videoElement)) {
+        if (!videoVisible && this.isElementInViewport(videoElementLayers)) {
           videoVisible = true;
-          videoElement.play();
-        } else if (videoVisible && !this.isElementInViewport(videoElement)) {
-          videoElement.pause();
+          videoElementLayers.play();
+        } else if (videoVisible && !this.isElementInViewport(videoElementLayers)) {
+          videoElementLayers.pause();
         }
 
         if (videoVisible) {
-          const newFrame = videoElement.currentTime + scrollDelta * 0.01;
-          videoElement.currentTime = newFrame;
+          const newFrame = videoElementLayers.currentTime + scrollDelta * 0.01;
+          videoElementLayers.currentTime = newFrame;
         }
 
         previousScrollTop = scrollTop;
@@ -89,14 +89,15 @@ export default {
   }
 };
 </script>
+}
+</script>
 
 <style scoped>
 
 .notification-section {
-  background-color: var(--color-primary);
+  background-color: #DFEAEA;
   width: 100%;
   margin: 0px;
-  border-radius: 100px 100px 0px 0px;
 }
 
 h2 {
@@ -109,6 +110,7 @@ p {
 }
 
 .textbox {
-  color: white;
+  color: #25454D;
 }
+
 </style>

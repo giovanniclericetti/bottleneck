@@ -6,13 +6,25 @@
     <navbar/>
   </div>
 
-  <div">
+  <div>
 
     <hero></hero>
-    <notifications/>
-    <features id="features"></features>
+    <notifications id="notifications" />
+    <features id="features" />
+    <layers id="layers"/>
+    <transparency id="transparency" />
+    <discover id="discover" />
+    <download id="download" />
+    <footerlanding/>
   </div>
+
+
+
+
+
   </div>
+
+
 </template>
 
 <script>
