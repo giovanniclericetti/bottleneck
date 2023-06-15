@@ -12,12 +12,11 @@
       </div>
     </div>
 
-    <div class="mt-5 pb-0">
-      <div>
+    <div class="mt-5 pb-0 mb-0">
+
         <video ref="videoElement" class="videoscroll">
           <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
         </video>
-      </div>
     </div>
   </div>
 </template>
@@ -95,7 +94,6 @@ export default {
 .notification-section {
   background-color: var(--color-primary);
   width: 100%;
-  margin: 0px;
   border-radius: 100px 100px 0px 0px;
 }
 

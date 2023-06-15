@@ -2,23 +2,40 @@
   <div>
     <div class="nav-container d-flex justify-content-between align-items-center px-5 shadow-sm" >
       <div>Bottleneck</div>
-      <div class="nav">
-        <b-nav pills card-header v-b-scrollspy:nav-scroller style="background-color: pink">
-          <b-nav-item href="#notifications" class="navitem" @click="scrollToNotifications">notifications</b-nav-item>
+      <div class="nav d-none d-md-block">
+
+        <b-nav pills card-header v-b-scrollspy:nav-scroller style="background-color: #E9EDED; padding: 4px">
+          <b-nav-item href="#hero" class="navitem" @click="scrollToNotifications">notifications</b-nav-item>
           <b-nav-item href="#features" class="navitem" @click="scrollToFeatures">features</b-nav-item>
           <b-nav-item href="#layers" class="navitem" @click="scrollToLayers">layers</b-nav-item>
           <b-nav-item href="#transparency" class="navitem" @click="scrollToTransparency">transparency</b-nav-item>
           <b-nav-item href="#discover" class="navitem" @click="scrollToDiscover">discover</b-nav-item>
           <span class="glider"></span>
         </b-nav>
+
       </div>
-      <div>
+      <div class="nav d-none d-md-block" >
         <button type="button" class="btn align-middle shadow-sm">
           <p>
             Download App
           </p>
         </button>
+
       </div>
+
+      <div class="nav d-md-none d-block">
+        <b-button v-b-toggle.sidebar-right>Toggle Sidebar</b-button>
+        <b-sidebar id="sidebar-right" title="Sidebar" right shadow>
+          <div class="px-3 py-2">
+              <b-nav-item href="#hero" class="sidebaritem" @click="scrollToNotifications">notifications</b-nav-item>
+              <b-nav-item href="#features" class="sidebaritem" @click="scrollToFeatures">features</b-nav-item>
+              <b-nav-item href="#layers" class="sidebaritem" @click="scrollToLayers">layers</b-nav-item>
+              <b-nav-item href="#transparency" class="sidebaritem" @click="scrollToTransparency">transparency</b-nav-item>
+              <b-nav-item href="#discover" class="sidebaritem" @click="scrollToDiscover">discover</b-nav-item>
+          </div>
+        </b-sidebar>
+      </div>
+
     </div>
     <div id="nav-scroller" style="overflow-y: scroll; ">
       <section id="hero">
@@ -149,7 +166,7 @@ export default {
   display: flex;
   height: 54px;
   width: 150px;
-  background-color: var(--color-primary);
+  background-color: #8FBCBE;
   z-index: 1;
   border-radius: 99px;
   transition: 0.25s ease-out;

@@ -13,7 +13,7 @@
       </div>
     </div>
 
-    <div class="my-5 pb-5">
+    <div class=" pb-5">
       <div>
         <video class="videoproject" controls>
           <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
