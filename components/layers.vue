@@ -1,6 +1,6 @@
 <template>
-  <div class="notification-section pt-2 pb-5">
-    <div class="textbox pt-5">
+  <div class="layer-section pt-2 pb-0">
+    <div class="textbox pt-md-5 pt-5 p-md-0 p-4">
       <h2 class="pt-5">Two layers to prevent useless notifications</h2>
       <div class="d-flex justify-content-center">
         <p style="max-width: 700px">
@@ -14,7 +14,7 @@
 
     <div class="my-5 pb-5">
       <div>
-        <video ref="videoElementLayers" style="width: 60%">
+        <video ref="videoElementLayers" class="videoscroll" >
           <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
         </video>
       </div>
@@ -94,7 +94,7 @@ export default {
 
 <style scoped>
 
-.notification-section {
+.layer-section {
   background-color: #DFEAEA;
   width: 100%;
   margin: 0px;
@@ -111,6 +111,23 @@ p {
 
 .textbox {
   color: #25454D;
+}
+
+.videoscroll{
+  width: 60%
+}
+
+@media (max-width: 768px) {
+
+  h2 {
+    font-size: 32px;
+    font-family: mondwest;
+  }
+
+  .videoscroll{
+    width: 90%
+  }
+
 }
 
 </style>

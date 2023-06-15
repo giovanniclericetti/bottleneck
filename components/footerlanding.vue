@@ -5,14 +5,15 @@
 
     <b-row class="text-left pt-5">
 
-      <b-col cols="12" md="4" lg="5" class="ml-5">
+      <b-col cols="12" md="4" lg="5" class="ml-md-5">
 
         <div class="logofooter"> Bottleneck </div>
         <p>© Bottleneck 2023. <br> All right reserved.</p>
 
+
       </b-col>
 
-      <b-col cols="12" md="2">
+      <b-col cols="6" md="2" class="mt-3 mt-md-0">
 
         <h6 class="pb-2"> Useful Links </h6>
 
@@ -22,7 +23,7 @@
 
       </b-col>
 
-      <b-col cols="12" md="2">
+      <b-col cols="6" md="2" class="mt-3 mt-md-0">
 
         <h6 class="pb-2"> Contact Us </h6>
 
@@ -32,9 +33,9 @@
 
       </b-col>
 
-      <b-col cols="12" md="2">
+      <b-col cols="12" md="2" class="d-none d-md-block">
 
-        <h6 class="pb-2"> Useful Links </h6>
+        <h6 class="pb-2 "> Download </h6>
 
         <p> Download for MacOS </p>
         <p> Download for Windows </p>
@@ -78,6 +79,17 @@ h6 {
 p {
   font-size: 18px;
   font-family: sfpro;
+}
+
+
+@media (max-width: 768px) {
+
+  .footer{
+    background-color: #25454D;
+    color: white;
+    border-radius: 50px 50px 0px 0px;
+  }
+
 }
 
 </style>

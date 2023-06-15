@@ -1,6 +1,6 @@
 <template>
-  <div class="notification-section pt-2 pb-5">
-    <div class="textbox pt-5">
+  <div class="notification-section pt-2 pb-0">
+    <div class="textbox pt-md-5 pt-5 p-md-0 p-4">
       <h2 class="pt-5">We feel you: too many notifications, right?</h2>
       <div class="d-flex justify-content-center">
         <p style="max-width: 600px">
@@ -12,9 +12,9 @@
       </div>
     </div>
 
-    <div class="my-5 pb-5">
+    <div class="mt-5 pb-0">
       <div>
-        <video ref="videoElement" style="width: 60%">
+        <video ref="videoElement" class="videoscroll">
           <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
         </video>
       </div>
@@ -111,4 +111,26 @@ p {
 .textbox {
   color: white;
 }
+
+.videoscroll{
+width: 60%
+}
+
+@media (max-width: 768px) {
+
+  h2 {
+    font-size: 32px;
+    font-family: mondwest;
+  }
+
+  .videoscroll{
+    width: 90%
+  }
+
+  .notification-section {
+    border-radius: 50px 50px 0px 0px;
+  }
+
+}
+
 </style>

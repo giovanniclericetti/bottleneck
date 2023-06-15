@@ -1,7 +1,7 @@
 <template>
-  <div style="background-color: white" class="p-5">
+  <div style="background-color: white" class="pb-5">
 
-    <div class="textbox pt-5">
+    <div class="textbox pt-md-5 pt-5 p-md-0 p-4">
       <h2 class="pt-5">
         Rethinking notifications
       </h2>
@@ -14,13 +14,13 @@
     </div>
 
 
-    <b-row class="p-5 px-0 mt-5 mx-5 d-md-flex" align-v="center">
+    <b-row class="p-md-5 px-md-0 mt-md-5 mx-md-5 mx-3 d-md-flex" align-v="center">
 
       <b-col lg="7" sm="12" class="d-md-flex insertscreen" data-aos="fade-right" data-aos-duration="1000">
         <b-img src="~assets/img/feature_1.png" fluid></b-img>
       </b-col>
 
-      <b-col style="text-align: left" class="ml-5">
+      <b-col style="text-align: left" class="ml-md-5 mt-4 mt-md-0">
 
         <h3>Knowing each other</h3>
         <p style="max-width: 400px">In order to provide you the best service possible, Bottleneck AI must get into your
@@ -42,11 +42,12 @@
         </div>
 
       </b-col>
+
     </b-row>
 
-    <b-row class="p-5 px-0 mx-5 d-md-flex" align-v="center">
+    <b-row class="p-md-5 px-md-0 mt-md-5 mx-md-5 mx-3 d-md-flex mt-4" align-v="center">
 
-      <b-col style="text-align: left" class="ml-5">
+      <b-col order="2" order-md="1" style="text-align: left" class="ml-md-5 mt-4 mt-md-0">
 
         <h3>Analyzing</h3>
         <p style="max-width: 400px">Bottleneck AI analyses each notification you receive, without storing any private information, to understand if that’s important, or not.</p>
@@ -66,19 +67,19 @@
         </div>
       </b-col>
 
-      <b-col lg="7" sm="12" class="d-md-flex insertscreen" data-aos="fade-left" data-aos-duration="1000">
+      <b-col order="1" order-md="2" lg="7" sm="12" class="d-md-flex insertscreen" data-aos="fade-left" data-aos-duration="1000">
         <b-img src="~assets/img/feature_2.png" fluid></b-img>
       </b-col>
 
     </b-row>
 
-    <b-row class="p-5 px-0 mx-5 mb-5 d-md-flex" align-v="center">
+    <b-row class="p-md-5 px-md-0 mt-md-5 mx-md-5 mx-3 d-md-flex mt-4" align-v="center">
 
       <b-col lg="7" sm="12" class="d-md-flex insertscreen" data-aos="fade-right" data-aos-duration="1000">
         <b-img src="~assets/img/feature_3.png" fluid></b-img>
       </b-col>
 
-      <b-col style="text-align: left" class="ml-5">
+      <b-col style="text-align: left" class="ml-md-5 mt-4 mt-md-0">
 
         <h3>Standing by your side</h3>
         <p style="max-width: 400px">Our dream is to provide user a precious tool able to follow them through years of changing devices, keeping them focussed and improving their digital wellbeing: starting from notifications.</p>
@@ -134,6 +135,21 @@ h3 {
 
 p {
   font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+  h2 {
+    font-size: 32px;
+    font-family: mondwest;
+  }
+
+  h3{
+    font-size: 28px;
+  }
+
+
+
 }
 
 </style>
