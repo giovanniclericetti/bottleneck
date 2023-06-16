@@ -5,11 +5,11 @@
       <div class="nav d-none d-lg-block">
 
         <b-nav pills card-header v-b-scrollspy:nav-scroller style="background-color: #E9EDED; padding: 4px">
-          <b-nav-item href="#hero" class="navitem" @click="scrollToNotifications">Notifications</b-nav-item>
-          <b-nav-item href="#features" class="navitem" @click="scrollToFeatures">Features</b-nav-item>
-          <b-nav-item href="#layers" class="navitem" @click="scrollToLayers">Layers</b-nav-item>
-          <b-nav-item href="#transparency" class="navitem" @click="scrollToTransparency">Transparency</b-nav-item>
-          <b-nav-item href="#discover" class="navitem" @click="scrollToDiscover">Discover</b-nav-item>
+          <div href="#hero" class="navitem" @click="scrollToNotifications">Notifications</div>
+          <div href="#features" class="navitem" @click="scrollToFeatures">Features</div>
+          <div href="#layers" class="navitem" @click="scrollToLayers">Layers</div>
+          <div href="#transparency" class="navitem" @click="scrollToTransparency">Transparency</div>
+          <div href="#discover" class="navitem" @click="scrollToDiscover">Discover</div>
           <span class="glider"></span>
         </b-nav>
 
