@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="nav-container d-flex justify-content-between align-items-center px-md-5 px-3 shadow-sm" >
+    <div class="nav-container d-flex justify-content-between align-items-center px-md-5 px-3 shadow-sm">
       <div>Bottleneck</div>
       <div class="nav d-none d-lg-block">
 
@@ -14,7 +14,7 @@
         </b-nav>
 
       </div>
-      <div class="nav d-none d-lg-block " >
+      <div class="nav d-none d-lg-block ">
         <button type="button" class="btn align-middle shadow-sm">
           <p>
             Download App
@@ -28,22 +28,22 @@
 
         <b-sidebar id="sidebar-right" title="" right shadow no-header>
           <div class="px-3">
-            <div type="button" class="close-btn d-flex justify-content-between align-items-center" style="height: 80px;" @click="$bvModal.hide('sidebar-right')">
+            <div type="button" class="close-btn d-flex justify-content-between align-items-center" style="height: 80px;"
+                 @click="$bvModal.hide('sidebar-right')">
 
               <b-img v-b-toggle.sidebar-right src="~assets/svg/icon3.svg" style="height: 40px"></b-img>
 
             </div>
-              <b-nav-item href="#hero" class="sidebaritem" @click="scrollToNotifications">Notifications</b-nav-item>
-              <b-nav-item href="#features" class="sidebaritem" @click="scrollToFeatures">Features</b-nav-item>
-              <b-nav-item href="#layers" class="sidebaritem" @click="scrollToLayers">Layers</b-nav-item>
-              <b-nav-item href="#transparency" class="sidebaritem" @click="scrollToTransparency">Transparency</b-nav-item>
-              <b-nav-item href="#discover" class="sidebaritem" @click="scrollToDiscover">Discover</b-nav-item>
-              <button type="button" class="btn mt-3">
-                <p class="">
-                  Download App
-                </p>
-              </button>
-
+            <b-nav-item href="#hero" class="sidebaritem" @click="scrollToNotifications">Notifications</b-nav-item>
+            <b-nav-item href="#features" class="sidebaritem" @click="scrollToFeatures">Features</b-nav-item>
+            <b-nav-item href="#layers" class="sidebaritem" @click="scrollToLayers">Layers</b-nav-item>
+            <b-nav-item href="#transparency" class="sidebaritem" @click="scrollToTransparency">Transparency</b-nav-item>
+            <b-nav-item href="#discover" class="sidebaritem" @click="scrollToDiscover">Discover</b-nav-item>
+            <button type="button" class="btn mt-3">
+              <p class="">
+                Download App
+              </p>
+            </button>
 
 
           </div>
@@ -53,28 +53,28 @@
     </div>
     <div id="nav-scroller" style="overflow-y: scroll; ">
       <section id="hero">
-        <hero />
+        <hero/>
       </section>
       <section id="notifications">
-        <notifications />
+        <notifications/>
       </section>
       <section id="features">
-        <features />
+        <features/>
       </section>
       <section id="layers">
-        <layers />
+        <layers/>
       </section>
       <section id="transparency">
-        <transparency />
+        <transparency/>
       </section>
       <section id="discover">
-        <discover />
+        <discover/>
       </section>
       <section id="download">
-        <download />
+        <download/>
       </section>
       <section id="footer">
-        <footerlanding />
+        <footerlanding/>
       </section>
     </div>
   </div>
@@ -83,20 +83,54 @@
 <script>
 export default {
   name: 'IndexPage',
+  data() {
+
+    return {
+      observer: null,
+    }
+
+  },
+
+
+  created() {
+    this.observer = new IntersectionObserver(this.onElementObserved,
+      {
+        root: this.$el,
+        threshold: 0.22,
+      })
+  },
+  mounted() {
+    this.$el.querySelectorAll('section[id]').forEach((section) => {
+      this.observer.observe(section)
+    })
+  },
+  deforeDestroy() {
+    this.observer.disconnect()
+  },
   methods: {
+    onElementObserved(entries) {
+
+      entries.forEach(({target, isIntersecting}) => {
+        const id = target.getAttribute('id')
+        if (isIntersecting) {
+         console.log(id)
+        }
+      })
+
+    },
     scrollIntoView(event) {
       event.preventDefault();
       const href = event.target.getAttribute('href');
       const el = href ? document.querySelector(href) : null;
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
+        el.scrollIntoView({behavior: 'smooth'});
       }
     },
     scrollToNotifications() {
       const el = document.querySelector('#notifications');
       const glider = document.querySelector('.glider');
       if (el && glider) {
-        el.scrollIntoView({ behavior: 'smooth' });
+        el.scrollIntoView({behavior: 'smooth'});
         glider.style.transform = 'translateX(0)';
       }
     },
@@ -104,7 +138,7 @@ export default {
       const el = document.querySelector('#features');
       const glider = document.querySelector('.glider');
       if (el && glider) {
-        el.scrollIntoView({ behavior: 'smooth' });
+        el.scrollIntoView({behavior: 'smooth'});
         glider.style.transform = 'translateX(100%)';
       }
     },
@@ -112,7 +146,7 @@ export default {
       const el = document.querySelector('#layers');
       const glider = document.querySelector('.glider');
       if (el && glider) {
-        el.scrollIntoView({ behavior: 'smooth' });
+        el.scrollIntoView({behavior: 'smooth'});
         glider.style.transform = 'translateX(200%)';
       }
     },
@@ -120,7 +154,7 @@ export default {
       const el = document.querySelector('#transparency');
       const glider = document.querySelector('.glider');
       if (el && glider) {
-        el.scrollIntoView({ behavior: 'smooth' });
+        el.scrollIntoView({behavior: 'smooth'});
         glider.style.transform = 'translateX(300%)';
       }
     },
@@ -128,7 +162,7 @@ export default {
       const el = document.querySelector('#discover');
       const glider = document.querySelector('.glider');
       if (el && glider) {
-        el.scrollIntoView({ behavior: 'smooth' });
+        el.scrollIntoView({behavior: 'smooth'});
         glider.style.transform = 'translateX(400%)';
       }
     },
@@ -149,9 +183,10 @@ export default {
 }
 
 .red {
-  background-color: #ff0000;}
+  background-color: #ff0000;
+}
 
-.bottleneck{
+.bottleneck {
   --color-primary: #619698;
   --color-secondary: #25454D;
   background-color: #25454D;
@@ -205,7 +240,7 @@ export default {
   padding-left: 0px;
 }
 
-.navitem a{
+.navitem a {
   color: #25454D;
 }
 
