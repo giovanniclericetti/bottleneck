@@ -1,12 +1,12 @@
 <template>
-  <div style="background-color: white" class="pb-5">
+  <div class="pb-5 bg-white">
 
-    <div class="textbox pt-md-5 pt-5 p-md-0 p-4">
+    <div class=" pt-md-5 pt-5 p-md-0 p-4">
       <h2 class="pt-5">
         Rethinking notifications
       </h2>
 
-      <div class="d-flex justify-content-center">
+      <div class="text-white d-flex justify-content-center">
 
         <p style="max-width: 720px"> Our approach is to implement AI in the device notification
           process, creating a soft, permeable, barrier, that keep your concentration on the line,
@@ -122,34 +122,5 @@ export default {
 
 <style scoped>
 
-h2 {
-  font-size: 48px;
-  font-family: mondwest;
-}
-
-h3 {
-  font-size: 36px;
-  font-family: mondwest;
-}
-
-
-p {
-  font-size: 18px;
-}
-
-@media (max-width: 768px) {
-
-  h2 {
-    font-size: 32px;
-    font-family: mondwest;
-  }
-
-  h3{
-    font-size: 28px;
-  }
-
-
-
-}
 
 </style>

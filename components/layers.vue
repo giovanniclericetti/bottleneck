@@ -1,6 +1,6 @@
 <template>
   <div class="layer-section pt-2 pb-0">
-    <div class="textbox pt-md-5 pt-5 p-md-0 p-4">
+    <div class="pt-md-5 pt-5 p-md-0 p-4" style="color: var(--color-secondary)">
       <h2 class="pt-5">Two layers to prevent useless notifications</h2>
       <div class="d-flex justify-content-center">
         <p style="max-width: 700px">
@@ -93,41 +93,5 @@ export default {
 </script>
 
 <style scoped>
-
-.layer-section {
-  background-color: #DFEAEA;
-  width: 100%;
-  margin: 0px;
-}
-
-h2 {
-  font-size: 48px;
-  font-family: mondwest;
-}
-
-p {
-  font-size: 18px;
-}
-
-.textbox {
-  color: #25454D;
-}
-
-.videoscroll{
-  width: 60%
-}
-
-@media (max-width: 768px) {
-
-  h2 {
-    font-size: 32px;
-    font-family: mondwest;
-  }
-
-  .videoscroll{
-    width: 90%
-  }
-
-}
 
 </style>

@@ -1,9 +1,9 @@
 <template>
   <div class="notification-section pt-2 pb-0">
-    <div class="textbox pt-md-5 pt-5 p-md-0 p-4">
-      <h2 class="pt-5">We feel you: too many notifications, right?</h2>
+    <div class="text-white pt-md-5 pt-5 p-md-0 p-4">
+      <h2 class="pt-5 text-white">We feel you: too many notifications, right?</h2>
       <div class="d-flex justify-content-center">
-        <p style="max-width: 600px">
+        <p style="max-width: 600px" class="text-white">
           We do know how it feels to be overwhelmed by notifications. You try to
           block them and just end up with losing precious and urgent
           information.... or try to keep it up losing concentration and
@@ -14,9 +14,9 @@
 
     <div class="mt-5 pb-0 mb-0">
 
-        <video ref="videoElement" class="videoscroll">
-          <source src="notifications.mp4" type="video/mp4">
-        </video>
+      <video ref="videoElement" class="videoscroll">
+        <source src="notifications.mp4" type="video/mp4">
+      </video>
 
     </div>
   </div>
@@ -91,45 +91,5 @@ export default {
 </script>
 
 <style scoped>
-
-.notification-section {
-  background-color: var(--color-primary);
-  width: 100%;
-  border-radius: 100px 100px 0px 0px;
-}
-
-h2 {
-  font-size: 48px;
-  font-family: mondwest;
-}
-
-p {
-  font-size: 18px;
-}
-
-.textbox {
-  color: white;
-}
-
-.videoscroll{
-width: 60%
-}
-
-@media (max-width: 768px) {
-
-  h2 {
-    font-size: 32px;
-    font-family: mondwest;
-  }
-
-  .videoscroll{
-    width: 90%
-  }
-
-  .notification-section {
-    border-radius: 50px 50px 0px 0px;
-  }
-
-}
 
 </style>

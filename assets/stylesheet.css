@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "mondwest";
+  src: url('fonts/mondwest/PPMondwest-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "sfpro";
+  src: url('fonts/sf/SF-Pro-Display-Light.otf') format("opentype");
+}
+
+.bottleneck {
+  --color-primary: #619698;
+  --color-secondary: #25454D;
+  background-color: #25454D;
+  font-family: 'sfpro';
+  text-align: center;
+}
+
+.hero-section {
+  min-height: 100vh;
+}
+
+.transparency-section {
+  width: 100%;
+  margin: 0px;
+}
+
+.layer-section {
+  background-color: #DFEAEA;
+  width: 100%;
+  margin: 0px;
+}
+
+.download-section {
+  background-color: #619698;
+  color: white;
+}
+
+.notification-section {
+  background-color: var(--color-primary);
+  width: 100%;
+  border-radius: 100px 100px 0px 0px;
+}
+
+.discover-section {
+  background-color: white;
+  width: 100%;
+  margin: 0px;
+  border-radius: 0px 0px 100px 100px;
+}
+
+.videoproject {
+  width: 60%;
+  border-radius: 24px
+}
+
+.giftransparency {
+  max-height: 40vh
+}
+
+h1 {
+  font-family: "mondwest";
+  font-size: 10vw;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: mondwest;
+  color: #25454D;
+}
+
+h3 {
+  font-size: 32px;
+  font-family: mondwest;
+  color: #25454D;
+}
+
+h4 {
+  font-size: 32px;
+  font-family: sfpro;
+  color: white;
+}
+
+p {
+  font-size: 18px;
+  color: #25454D;
+}
+
+.btn {
+  height: 38px;
+  background-color: none;
+  border-radius: 21px;
+  color: white;
+  border-width: 1px;
+  border-color: white;
+  font-family: 'mondwest';
+  font-size: 20px;
+}
+
+
+.btn:hover {
+  background-color: white;
+  color: #25454D;
+}
+
+.subtitle {
+  max-width: 600px;
+}
+
+.herodash img {
+  height: 80vh;
+}
+
+.videoscroll{
+  width: 60%
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 15vw;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-family: mondwest;
+  }
+
+  h3 {
+    color: white;
+    font-size: 20px;
+  }
+
+  .herodash img {
+    width: 80vw;
+    height: auto;
+  }
+
+  .videoscroll{
+    width: 90%
+  }
+
+  .notification-section {
+    border-radius: 50px 50px 0px 0px;
+  }
+
+  .discover-section {
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+    border-radius: 0px 0px 100px 100px;
+  }
+
+  .hero-section {
+    min-height: auto;
+  }
+
+
+  .videoproject{
+    width: 90%;
+    border-radius: 25px
+  }
+
+  .discover-section {
+    border-radius: 0px 0px 50px 50px;
+  }
+
+  .giftransparency {
+    width: 90%
+  }
+}
