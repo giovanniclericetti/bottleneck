@@ -1,20 +1,20 @@
 <template>
   <div>
-    <div class="nav-container d-flex justify-content-between align-items-center px-5 shadow-sm" >
+    <div class="nav-container d-flex justify-content-between align-items-center px-md-5 px-3 shadow-sm" >
       <div>Bottleneck</div>
-      <div class="nav d-none d-md-block">
+      <div class="nav d-none d-lg-block">
 
         <b-nav pills card-header v-b-scrollspy:nav-scroller style="background-color: #E9EDED; padding: 4px">
-          <b-nav-item href="#hero" class="navitem" @click="scrollToNotifications">notifications</b-nav-item>
-          <b-nav-item href="#features" class="navitem" @click="scrollToFeatures">features</b-nav-item>
-          <b-nav-item href="#layers" class="navitem" @click="scrollToLayers">layers</b-nav-item>
-          <b-nav-item href="#transparency" class="navitem" @click="scrollToTransparency">transparency</b-nav-item>
-          <b-nav-item href="#discover" class="navitem" @click="scrollToDiscover">discover</b-nav-item>
+          <b-nav-item href="#hero" class="navitem" @click="scrollToNotifications">Notifications</b-nav-item>
+          <b-nav-item href="#features" class="navitem" @click="scrollToFeatures">Features</b-nav-item>
+          <b-nav-item href="#layers" class="navitem" @click="scrollToLayers">Layers</b-nav-item>
+          <b-nav-item href="#transparency" class="navitem" @click="scrollToTransparency">Transparency</b-nav-item>
+          <b-nav-item href="#discover" class="navitem" @click="scrollToDiscover">Discover</b-nav-item>
           <span class="glider"></span>
         </b-nav>
 
       </div>
-      <div class="nav d-none d-md-block" >
+      <div class="nav d-none d-lg-block " >
         <button type="button" class="btn align-middle shadow-sm">
           <p>
             Download App
@@ -23,15 +23,29 @@
 
       </div>
 
-      <div class="nav d-md-none d-block">
-        <b-button v-b-toggle.sidebar-right>Toggle Sidebar</b-button>
-        <b-sidebar id="sidebar-right" title="Sidebar" right shadow>
-          <div class="px-3 py-2">
-              <b-nav-item href="#hero" class="sidebaritem" @click="scrollToNotifications">notifications</b-nav-item>
-              <b-nav-item href="#features" class="sidebaritem" @click="scrollToFeatures">features</b-nav-item>
-              <b-nav-item href="#layers" class="sidebaritem" @click="scrollToLayers">layers</b-nav-item>
-              <b-nav-item href="#transparency" class="sidebaritem" @click="scrollToTransparency">transparency</b-nav-item>
-              <b-nav-item href="#discover" class="sidebaritem" @click="scrollToDiscover">discover</b-nav-item>
+      <div class="nav d-lg-none d-flex justify-content-between align-items-center">
+        <b-img v-b-toggle.sidebar-right src="~assets/svg/icon1.svg" style="height: 40px"></b-img>
+
+        <b-sidebar id="sidebar-right" title="" right shadow no-header>
+          <div class="px-3">
+            <div type="button" class="close-btn d-flex justify-content-between align-items-center" style="height: 80px;" @click="$bvModal.hide('sidebar-right')">
+
+              <b-img v-b-toggle.sidebar-right src="~assets/svg/icon3.svg" style="height: 40px"></b-img>
+
+            </div>
+              <b-nav-item href="#hero" class="sidebaritem" @click="scrollToNotifications">Notifications</b-nav-item>
+              <b-nav-item href="#features" class="sidebaritem" @click="scrollToFeatures">Features</b-nav-item>
+              <b-nav-item href="#layers" class="sidebaritem" @click="scrollToLayers">Layers</b-nav-item>
+              <b-nav-item href="#transparency" class="sidebaritem" @click="scrollToTransparency">Transparency</b-nav-item>
+              <b-nav-item href="#discover" class="sidebaritem" @click="scrollToDiscover">Discover</b-nav-item>
+              <button type="button" class="btn mt-3">
+                <p class="">
+                  Download App
+                </p>
+              </button>
+
+
+
           </div>
         </b-sidebar>
       </div>
@@ -122,7 +136,29 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+
+@font-face {
+  font-family: "mondwest";
+  src: url('./assets/fonts/mondwest/PPMondwest-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "sfpro";
+  src: url('./assets/fonts/sf/SF-Pro-Display-Light.otf') format("opentype");
+}
+
+.red {
+  background-color: #ff0000;}
+
+.bottleneck{
+  --color-primary: #619698;
+  --color-secondary: #25454D;
+  background-color: #25454D;
+  font-family: 'sfpro';
+  text-align: center;
+}
+
 .nav-container {
   color: #25454D;
   font-family: 'mondwest';
@@ -157,6 +193,18 @@ export default {
   z-index: 999;
 }
 
+.sidebaritem {
+  text-align: left;
+  font-size: 24px;
+  z-index: 999;
+  background-color: pink;
+}
+
+.sidebaritem a {
+  color: #25454D;
+  padding-left: 0px;
+}
+
 .navitem a{
   color: #25454D;
 }
@@ -189,4 +237,20 @@ export default {
   background-color: #619698;
   color: white;
 }
+
+@media (max-width: 768px) {
+
+  .btn {
+    background-color: none;
+    border-radius: 21px;
+    color: #619698;
+    border-width: 1px;
+    border-color: #619698;
+    font-size: 24px;
+    height: 46px;
+  }
+
+}
+
+
 </style>

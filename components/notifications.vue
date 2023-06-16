@@ -15,8 +15,9 @@
     <div class="mt-5 pb-0 mb-0">
 
         <video ref="videoElement" class="videoscroll">
-          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          <source src="notifications.mp4" type="video/mp4">
         </video>
+
     </div>
   </div>
 </template>

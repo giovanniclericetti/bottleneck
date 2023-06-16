@@ -5,7 +5,7 @@
   </main>
 </template>
 
-<style scoped>
+<style>
 
 @font-face {
   font-family: "mondwest";
@@ -16,7 +16,6 @@
   font-family: "sfpro";
   src: url('./assets/fonts/sf/SF-Pro-Display-Light.otf') format("opentype");
 }
-
 
 
 .red {
