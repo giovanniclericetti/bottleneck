@@ -19,27 +19,7 @@
 <script>
 export default {
   name: "hero",
-  data() {
-    return {
-      gradientStyle: {
-        background: "",
-      },
-    };
-  },
-  mounted() {
-    window.addEventListener("mousemove", this.updateGradient);
-  },
-  beforeDestroy() {
-    window.removeEventListener("mousemove", this.updateGradient);
-  },
-  methods: {
-    updateGradient(event) {
-      const x = event.clientX / window.innerWidth;
-      const y = event.clientY / window.innerHeight;
-      const gradientColor = `radial-gradient(circle at ${x * 100}% ${y * 100}%, #366D70, #25454D)`;
-      this.gradientStyle.background = gradientColor;
-    },
-  },
+
 };
 </script>
 

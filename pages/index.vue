@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="global-wrapper bottleneck" :style="gradientStyle">
     <div class="nav-container d-flex justify-content-between align-items-center px-md-5 px-3 shadow-sm">
       <div>Bottleneck</div>
       <div class="nav d-none d-lg-block">
@@ -10,7 +10,7 @@
           <div href="#layers" class="navitem" @click="scrollToLayers">Layers</div>
           <div href="#transparency" class="navitem" @click="scrollToTransparency">Transparency</div>
           <div href="#discover" class="navitem" @click="scrollToDiscover">Discover</div>
-          <span class="glider" :style="{transform: `translateX(${sections.indexOf(activeSection)*100}%)`}"></span>
+          <span class="glider" :style="{transform: `translateX(${(sections.indexOf(activeSection) || 0) *100}%)`}"></span>
         </b-nav>
 
       </div>
@@ -51,9 +51,9 @@
       </div>
 
     </div>
-    <div id="nav-scroller" style="overflow-y: scroll; ">
+    <div style="overflow-y: scroll; overflow-x: hidden">
 
-      <section id="hero">
+      <section>
         <hero/>
       </section>
 
@@ -77,11 +77,11 @@
         <discover/>
       </section>
 
-      <section id="download">
+      <section>
         <download/>
       </section>
-
-      <section id="footer">
+      </div>
+      <section>
         <footerlanding/>
       </section>
 
@@ -92,9 +92,13 @@
 <script>
 export default {
   name: 'IndexPage',
+
   data() {
 
     return {
+      gradientStyle: {
+        background: "",
+      },
       observer: null,
       activeSection: 'notifications',
       sections: ['notifications', 'features', 'layers', 'transparency', 'discover']
@@ -102,33 +106,43 @@ export default {
 
   },
 
-
   created() {
     this.observer = new IntersectionObserver(this.onElementObserved,
       {
         root: this.$el,
-        threshold: 0.22,
+        threshold: 0.5,
       })
   },
   mounted() {
+    window.addEventListener("mousemove", this.updateGradient);
     this.$el.querySelectorAll('section[id]').forEach((section) => {
       this.observer.observe(section)
     })
   },
   deforeDestroy() {
-    this.observer.disconnect()
+    this.observer.disconnect(),
+      window.removeEventListener("mousemove", this.updateGradient);
   },
+
   methods: {
+    updateGradient(event) {
+      const x = event.clientX / window.innerWidth;
+      const y = event.clientY / window.innerHeight;
+      const gradientColor = `radial-gradient(circle at ${x * 100}% ${y * 100}%, #366D70, #25454D)`;
+      this.gradientStyle.background = gradientColor;
+    },
     onElementObserved(entries) {
 
       entries.forEach(({target, isIntersecting}) => {
         const id = target.getAttribute('id')
         if (isIntersecting) {
-          this.activeSection='id'
+          console.log(id)
+            this.activeSection=id
         }
       })
 
     },
+
     scrollIntoView(event) {
       event.preventDefault();
       const href = event.target.getAttribute('href');
@@ -142,7 +156,6 @@ export default {
       const glider = document.querySelector('.glider');
       if (el && glider) {
         el.scrollIntoView({behavior: 'smooth'});
-        glider.style.transform = 'translateX(0)';
       }
     },
     scrollToFeatures() {
@@ -150,7 +163,6 @@ export default {
       const glider = document.querySelector('.glider');
       if (el && glider) {
         el.scrollIntoView({behavior: 'smooth'});
-        glider.style.transform = 'translateX(100%)';
       }
     },
     scrollToLayers() {
@@ -158,7 +170,6 @@ export default {
       const glider = document.querySelector('.glider');
       if (el && glider) {
         el.scrollIntoView({behavior: 'smooth'});
-        glider.style.transform = 'translateX(200%)';
       }
     },
     scrollToTransparency() {
@@ -166,7 +177,6 @@ export default {
       const glider = document.querySelector('.glider');
       if (el && glider) {
         el.scrollIntoView({behavior: 'smooth'});
-        glider.style.transform = 'translateX(300%)';
       }
     },
     scrollToDiscover() {
@@ -174,7 +184,6 @@ export default {
       const glider = document.querySelector('.glider');
       if (el && glider) {
         el.scrollIntoView({behavior: 'smooth'});
-        glider.style.transform = 'translateX(400%)';
       }
     },
   },
@@ -243,7 +252,6 @@ export default {
   text-align: left;
   font-size: 24px;
   z-index: 999;
-  background-color: pink;
 }
 
 .sidebaritem a {

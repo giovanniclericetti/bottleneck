@@ -1,5 +1,5 @@
 <template>
-  <main class="global-wrapper bottleneck">
+  <main>
     <Nuxt />
 
   </main>
@@ -7,27 +7,7 @@
 
 <style>
 
-@font-face {
-  font-family: "mondwest";
-  src: url('./assets/fonts/mondwest/PPMondwest-Regular.ttf') format("truetype");
-}
 
-@font-face {
-  font-family: "sfpro";
-  src: url('./assets/fonts/sf/SF-Pro-Display-Light.otf') format("opentype");
-}
-
-
-.red {
-background-color: #ff0000;}
-
-.bottleneck{
-  --color-primary: #619698;
-  --color-secondary: #25454D;
-  background-color: #25454D;
-  font-family: 'sfpro';
-  text-align: center;
-}
 
 
 </style>
