@@ -10,7 +10,7 @@
           <div href="#layers" class="navitem" @click="scrollToLayers">Layers</div>
           <div href="#transparency" class="navitem" @click="scrollToTransparency">Transparency</div>
           <div href="#discover" class="navitem" @click="scrollToDiscover">Discover</div>
-          <span class="glider"></span>
+          <span class="glider" :style="{transform: `translateX(${sections.indexOf(activeSection)*100}%)`}"></span>
         </b-nav>
 
       </div>
@@ -52,30 +52,39 @@
 
     </div>
     <div id="nav-scroller" style="overflow-y: scroll; ">
+
       <section id="hero">
         <hero/>
       </section>
+
       <section id="notifications">
         <notifications/>
       </section>
+
       <section id="features">
         <features/>
       </section>
+
       <section id="layers">
         <layers/>
       </section>
+
       <section id="transparency">
         <transparency/>
       </section>
+
       <section id="discover">
         <discover/>
       </section>
+
       <section id="download">
         <download/>
       </section>
+
       <section id="footer">
         <footerlanding/>
       </section>
+
     </div>
   </div>
 </template>
@@ -87,6 +96,8 @@ export default {
 
     return {
       observer: null,
+      activeSection: 'notifications',
+      sections: ['notifications', 'features', 'layers', 'transparency', 'discover']
     }
 
   },
@@ -113,7 +124,7 @@ export default {
       entries.forEach(({target, isIntersecting}) => {
         const id = target.getAttribute('id')
         if (isIntersecting) {
-         console.log(id)
+          this.activeSection='id'
         }
       })
 
