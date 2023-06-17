@@ -29,6 +29,8 @@
 export default {
   name: "discover"
 }
+
+
 </script>
 
 <style scoped>

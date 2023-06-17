@@ -11,6 +11,7 @@
 
       <div class="herodash d-flex justify-content-center mt-5  mb-5">
         <img src="~assets/img/dashboard.png">
+
       </div>
     </div>
   </div>

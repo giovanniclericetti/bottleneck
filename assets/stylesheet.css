@@ -105,14 +105,14 @@
 .notification-section {
   background-color: var(--color-primary);
   width: 100%;
-  border-radius: 100px 100px 0px 0px;
+  border-radius: 64px 64px 0px 0px;
 }
 
 .discover-section {
   background-color: white;
   width: 100%;
   margin: 0px;
-  border-radius: 0px 0px 100px 100px;
+  border-radius: 0px 0px 64px 64px;
   color: var(--color-secondary);
 }
 
@@ -132,7 +132,7 @@
 .footer{
   background-color: var(--color-secondary);
   color: white;
-  border-radius: 100px 100px 0px 0px;
+  border-radius: 64px 64px 0px 0px;
 }
 
 .logofooter {
@@ -234,14 +234,14 @@ p {
   }
 
   .notification-section {
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 32px 32px 0px 0px;
   }
 
   .discover-section {
     background-color: white;
     width: 100%;
     margin: 0px;
-    border-radius: 0px 0px 100px 100px;
+    border-radius: 0px 0px 32px 32px;
   }
 
   .hero-section {

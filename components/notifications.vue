@@ -47,7 +47,7 @@ export default {
         }
 
         if (videoVisible) {
-          const newFrame = videoElement.currentTime + scrollDelta * 0.01;
+          const newFrame = videoElement.currentTime + scrollDelta * 0.003;
           videoElement.currentTime = newFrame;
         }
 
