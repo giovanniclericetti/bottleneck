@@ -53,24 +53,37 @@
     </div>
     <div style="overflow-y: scroll; overflow-x: hidden">
 
+      <section>
         <hero/>
+      </section>
 
-        <notifications id="notifications"/>
+      <section id="notifications">
+        <notifications/>
+      </section>
 
+      <section id="features">
+        <features/>
+      </section>
 
-      <section > <features id="features"/> </section>
+      <section id="layers">
+        <layers/>
+      </section>
 
-      <section id="layers"> <layers/> </section>
+      <section id="transparency">
+        <transparency/>
+      </section>
 
-      <section id="transparency"> <transparency/> </section>
+      <section id="discover">
+        <discover/>
+      </section>
 
-      <section id="discover"> <discover/> </section>
-
-      <section> <download/> </section>
-
+      <section>
+        <download/>
+      </section>
       </div>
-
-      <section> <footerlanding/> </section>
+      <section>
+        <footerlanding/>
+      </section>
 
     </div>
   </div>
@@ -178,5 +191,6 @@ export default {
 </script>
 
 <style>
+
 
 </style>
