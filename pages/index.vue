@@ -1,7 +1,7 @@
 <template>
   <div class="global-wrapper bottleneck" :style="gradientStyle">
     <div class="nav-container d-flex justify-content-between align-items-center px-md-5 px-3 shadow-sm">
-      <div>Bottleneck</div>
+      <div class="navlogo"> <img src="~assets/svg/bottleneck.svg"> </div>
       <div class="nav d-none d-lg-block">
 
         <b-nav pills card-header v-b-scrollspy:nav-scroller style="background-color: #E9EDED; padding: 4px">
@@ -39,8 +39,8 @@
             <b-nav-item href="#layers" class="sidebaritem" @click="scrollToLayers">Layers</b-nav-item>
             <b-nav-item href="#transparency" class="sidebaritem" @click="scrollToTransparency">Transparency</b-nav-item>
             <b-nav-item href="#discover" class="sidebaritem" @click="scrollToDiscover">Discover</b-nav-item>
-            <button type="button" class="btn mt-3">
-              <p class="">
+            <button type="button" class="btn btn-big mt-3">
+              <p class="sidebaritem">
                 Download App
               </p>
             </button>

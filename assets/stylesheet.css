@@ -181,6 +181,12 @@ p {
   border-color: var(--color-primary);;
   color: var(--color-primary);
   background-color: none;
+  width: 140px;
+}
+
+.btn-big {
+  height: 48px;
+  border-width: 2px;
 }
 
 .btn:hover {
@@ -197,13 +203,22 @@ p {
   max-width: 600px;
 }
 
-.herodash img {
+.imgmobile img {
   height: 80vh;
 }
 
 .videoscroll{
   width: 60%
 }
+
+.navlogo{
+  width: 140px;
+}
+
+.navlogo img {
+  width: 120%;
+}
+
 
 
 
@@ -218,13 +233,18 @@ p {
   h2 {
     font-size: 32px;
     font-family: mondwest;
+    max-width: 300px;
   }
 
   h3 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
-  .herodash img {
+  h4{
+    font-size: 24px;
+  }
+
+  .imgmobile img {
     width: 80vw;
     height: auto;
   }
