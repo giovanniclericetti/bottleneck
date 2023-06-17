@@ -15,7 +15,7 @@
 
       </div>
       <div class="nav d-none d-lg-block ">
-        <button type="button" class="btn align-middle shadow-sm">
+        <button type="button" class="btn align-middle">
           <p>
             Download App
           </p>
@@ -53,37 +53,24 @@
     </div>
     <div style="overflow-y: scroll; overflow-x: hidden">
 
-      <section>
         <hero/>
-      </section>
 
-      <section id="notifications">
-        <notifications/>
-      </section>
+        <notifications id="notifications"/>
 
-      <section id="features">
-        <features/>
-      </section>
 
-      <section id="layers">
-        <layers/>
-      </section>
+      <section > <features id="features"/> </section>
 
-      <section id="transparency">
-        <transparency/>
-      </section>
+      <section id="layers"> <layers/> </section>
 
-      <section id="discover">
-        <discover/>
-      </section>
+      <section id="transparency"> <transparency/> </section>
 
-      <section>
-        <download/>
-      </section>
+      <section id="discover"> <discover/> </section>
+
+      <section> <download/> </section>
+
       </div>
-      <section>
-        <footerlanding/>
-      </section>
+
+      <section> <footerlanding/> </section>
 
     </div>
   </div>
@@ -191,120 +178,5 @@ export default {
 </script>
 
 <style>
-
-@font-face {
-  font-family: "mondwest";
-  src: url('./assets/fonts/mondwest/PPMondwest-Regular.ttf') format("truetype");
-}
-
-@font-face {
-  font-family: "sfpro";
-  src: url('./assets/fonts/sf/SF-Pro-Display-Light.otf') format("opentype");
-}
-
-.red {
-  background-color: #ff0000;
-}
-
-.bottleneck {
-  --color-primary: #619698;
-  --color-secondary: #25454D;
-  background-color: #25454D;
-  font-family: 'sfpro';
-  text-align: center;
-}
-
-.nav-container {
-  color: #25454D;
-  font-family: 'mondwest';
-  font-size: 20px;
-  height: 80px;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  background-color: white;
-}
-
-.nav {
-  align-items: center;
-  font-size: 20px;
-  border-radius: 99px;
-  cursor: pointer;
-  margin: 0px;
-  transition: color 0.15s ease-in;
-}
-
-.navitem {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 54px;
-  width: 150px;
-  font-size: 20px;
-  border-radius: 99px;
-  cursor: pointer;
-  margin: 0px;
-  transition: color 0.15s ease-in;
-  z-index: 999;
-}
-
-.sidebaritem {
-  text-align: left;
-  font-size: 24px;
-  z-index: 999;
-}
-
-.sidebaritem a {
-  color: #25454D;
-  padding-left: 0px;
-}
-
-.navitem a {
-  color: #25454D;
-}
-
-.glider {
-  position: absolute;
-  display: flex;
-  height: 54px;
-  width: 150px;
-  background-color: #8FBCBE;
-  z-index: 1;
-  border-radius: 99px;
-  transition: 0.25s ease-out;
-}
-
-#nav-scroller {
-  margin-top: 0px;
-}
-
-.btn {
-  height: 38px;
-  background-color: none;
-  border-radius: 21px;
-  color: #619698;
-  border-width: 1px;
-  border-color: #619698;
-}
-
-.btn:hover {
-  background-color: #619698;
-  color: white;
-}
-
-@media (max-width: 768px) {
-
-  .btn {
-    background-color: none;
-    border-radius: 21px;
-    color: #619698;
-    border-width: 1px;
-    border-color: #619698;
-    font-size: 24px;
-    height: 46px;
-  }
-
-}
-
 
 </style>

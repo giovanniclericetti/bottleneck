@@ -14,7 +14,7 @@
         <p class="text-white" style="max-width: 400px">Bottleneck is available for every platform, <br> the system
           doesn’t change..</p>
 
-        <button type="button" class="btn btnwhite align-middle">
+        <button type="button" class="btn light-theme align-middle">
           <p>
             Download App
           </p>

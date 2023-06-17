@@ -1,12 +1,12 @@
 <template>
-  <div class="pb-5 bg-white">
+  <div class="features-section pb-5 bg-white">
 
     <div class=" pt-md-5 pt-5 p-md-0 p-4">
       <h2 class="pt-5">
         Rethinking notifications
       </h2>
 
-      <div class="text-white d-flex justify-content-center">
+      <div class="d-flex justify-content-center">
 
         <p style="max-width: 720px"> Our approach is to implement AI in the device notification
           process, creating a soft, permeable, barrier, that keep your concentration on the line,

@@ -11,9 +11,74 @@
 .bottleneck {
   --color-primary: #619698;
   --color-secondary: #25454D;
-  background-color: #25454D;
+  background-color: var(--color-primary);
   font-family: 'sfpro';
   text-align: center;
+}
+
+.light-theme {
+  --color-primary: white;
+  --color-secondary: #619698;
+}
+
+.nav-container {
+  color: var(--color-secondary);
+  font-family: 'mondwest';
+  font-size: 20px;
+  height: 80px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: white;
+}
+
+.nav {
+  align-items: center;
+  font-size: 20px;
+  border-radius: 99px;
+  cursor: pointer;
+  margin: 0px;
+  transition: color 0.15s ease-in;
+}
+
+.navitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 99px;
+  cursor: pointer;
+  margin: 0px;
+  transition: color 0.15s ease-in;
+  z-index: 999;
+}
+
+.sidebaritem {
+  text-align: left;
+  font-size: 24px;
+  z-index: 999;
+}
+
+.sidebaritem a {
+  color: var(--color-secondary);
+  padding-left: 0px;
+}
+
+.navitem a {
+  color: var(--color-secondary);
+}
+
+.glider {
+  position: absolute;
+  display: flex;
+  height: 54px;
+  width: 150px;
+  background-color: #8FBCBE;
+  z-index: 1;
+  border-radius: 99px;
+  transition: 0.25s ease-out;
 }
 
 .hero-section {
@@ -29,10 +94,11 @@
   background-color: #DFEAEA;
   width: 100%;
   margin: 0px;
+  color: var(--color-secondary);
 }
 
 .download-section {
-  background-color: #619698;
+  background-color: var(--color-primary);
   color: white;
 }
 
@@ -47,6 +113,11 @@
   width: 100%;
   margin: 0px;
   border-radius: 0px 0px 100px 100px;
+  color: var(--color-secondary);
+}
+
+.features-section{
+  color: var(--color-secondary);
 }
 
 .videoproject {
@@ -56,6 +127,17 @@
 
 .giftransparency {
   max-height: 40vh
+}
+
+.footer{
+  background-color: var(--color-secondary);
+  color: white;
+  border-radius: 100px 100px 0px 0px;
+}
+
+.logofooter {
+  font-size: 64px;
+  font-family: mondwest;
 }
 
 h1 {
@@ -68,13 +150,11 @@ h1 {
 h2 {
   font-size: 48px;
   font-family: mondwest;
-  color: #25454D;
 }
 
 h3 {
   font-size: 32px;
   font-family: mondwest;
-  color: #25454D;
 }
 
 h4 {
@@ -83,26 +163,34 @@ h4 {
   color: white;
 }
 
+h6 {
+  font-size: 24px;
+  font-family: mondwest;
+}
+
 p {
   font-size: 18px;
-  color: #25454D;
 }
 
 .btn {
   height: 38px;
-  background-color: none;
   border-radius: 21px;
-  color: white;
   border-width: 1px;
-  border-color: white;
   font-family: 'mondwest';
   font-size: 20px;
+  border-color: var(--color-primary);;
+  color: var(--color-primary);
+  background-color: none;
 }
 
-
 .btn:hover {
-  background-color: white;
-  color: #25454D;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.light-theme:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .subtitle {
@@ -133,8 +221,7 @@ p {
   }
 
   h3 {
-    color: white;
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .herodash img {
@@ -161,6 +248,11 @@ p {
     min-height: auto;
   }
 
+  .footer{
+    background-color: var(--color-secondary);
+    color: white;
+    border-radius: 50px 50px 0px 0px;
+  }
 
   .videoproject{
     width: 90%;

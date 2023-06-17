@@ -33,7 +33,7 @@
 
       </b-col>
 
-      <b-col cols="12" md="2" class="d-none d-md-block">
+      <b-col cols="12" md="2" class="d-none d-md-block e">
 
         <h6 class="pb-2 "> Download </h6>
 
@@ -60,36 +60,6 @@ export default {
 
 <style scoped>
 
-.footer{
-  background-color: #25454D;
-  color: white;
-  border-radius: 100px 100px 0px 0px;
-}
 
-.logofooter {
-  font-size: 64px;
-  font-family: mondwest;
-}
-
-h6 {
-  font-size: 24px;
-  font-family: mondwest;
-}
-
-p {
-  font-size: 18px;
-  font-family: sfpro;
-}
-
-
-@media (max-width: 768px) {
-
-  .footer{
-    background-color: #25454D;
-    color: white;
-    border-radius: 50px 50px 0px 0px;
-  }
-
-}
 
 </style>
