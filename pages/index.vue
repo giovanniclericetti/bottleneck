@@ -1,7 +1,7 @@
 <template>
   <div class="global-wrapper bottleneck" :style="gradientStyle">
     <div class="nav-container d-flex justify-content-between align-items-center px-md-5 px-3 shadow-sm">
-      <div class="navlogo"> <img src="~assets/svg/bottleneck.svg"> </div>
+      <div class="navlogo"> <div href="#hero" @click="scrollToNotifications" style="cursor: pointer"> <img src="~assets/svg/bottleneck.svg">  </div> </div>
       <div class="nav d-none d-lg-block">
 
         <b-nav pills card-header v-b-scrollspy:nav-scroller style="background-color: #E9EDED; padding: 4px">
@@ -53,11 +53,8 @@
     </div>
     <div style="overflow-y: scroll; overflow-x: hidden">
 
-      <section>
-        <hero/>
-      </section>
-
       <section id="notifications">
+        <hero/>
         <notifications/>
       </section>
 
