@@ -8,8 +8,8 @@
         <p style="max-width: 700px">
           Bottleneck features two different dashboard layers. One immediately shown,
           to display the most important notifications. The other, reachable via the “go
-          deeper” button, summarises all the missed notifications, to keep you updated,
-          without having you feel overwhelmt.
+          deeper” button, summarizes all the missed notifications, to keep you updated,
+          without having you feel overwhelmed.
         </p>
       </div>
     </div>
@@ -21,10 +21,8 @@
         </video>
       </div>
 
-      <div class="d-flex d-md-none imgmobile justify-content-center" style="">
-
-        <img src="~assets/img/notifications-static.png">
-
+      <div class="d-flex d-md-none imgmobile justify-content-center">
+        <img src="~assets/img/notifications-static.png" alt="layers">
       </div>
 
     </div>
@@ -56,8 +54,7 @@ export default {
         }
 
         if (videoVisible) {
-          const newFrame = videoElementLayers.currentTime + scrollDelta * 0.003;
-          videoElementLayers.currentTime = newFrame;
+          videoElementLayers.currentTime = videoElementLayers.currentTime + scrollDelta * 0.003;
         }
 
         previousScrollTop = scrollTop;
@@ -97,8 +94,6 @@ export default {
     window.removeEventListener("focus", this.startVideoScroll);
   }
 };
-</script>
-}
 </script>
 
 <style scoped>

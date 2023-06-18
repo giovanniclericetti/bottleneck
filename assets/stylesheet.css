@@ -8,11 +8,16 @@
   src: url('fonts/sf/SF-Pro-Display-Light.otf') format("opentype");
 }
 
+section {
+  margin-top: -70px;
+  padding-top: 70px;
+}
+
 .bottleneck {
   --color-primary: #619698;
   --color-secondary: #25454D;
   background-color: var(--color-primary);
-  font-family: 'sfpro';
+  font-family: 'sfpro', sans-serif;
   text-align: center;
 }
 
@@ -23,7 +28,7 @@
 
 .nav-container {
   color: var(--color-secondary);
-  font-family: 'mondwest';
+  font-family: 'mondwest', sans-serif;
   font-size: 20px;
   height: 80px;
   position: fixed;
@@ -37,7 +42,7 @@
   font-size: 20px;
   border-radius: 99px;
   cursor: pointer;
-  margin: 0px;
+  margin: 0;
   transition: color 0.15s ease-in;
 }
 
@@ -50,7 +55,7 @@
   font-size: 20px;
   border-radius: 99px;
   cursor: pointer;
-  margin: 0px;
+  margin: 0;
   transition: color 0.15s ease-in;
   z-index: 999;
 }
@@ -63,7 +68,7 @@
 
 .sidebaritem a {
   color: var(--color-secondary);
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .navitem a {
@@ -87,13 +92,13 @@
 
 .transparency-section {
   width: 100%;
-  margin: 0px;
+  margin: 0;
 }
 
 .layer-section {
   background-color: #DFEAEA;
   width: 100%;
-  margin: 0px;
+  margin: 0;
   color: var(--color-secondary);
 }
 
@@ -105,43 +110,43 @@
 .notification-section {
   background-color: var(--color-primary);
   width: 100%;
-  border-radius: 64px 64px 0px 0px;
+  border-radius: 64px 64px 0 0;
 }
 
 .discover-section {
   background-color: white;
   width: 100%;
-  margin: 0px;
-  border-radius: 0px 0px 64px 64px;
+  margin: 0;
+  border-radius: 0 0 64px 64px;
   color: var(--color-secondary);
 }
 
-.features-section{
+.features-section {
   color: var(--color-secondary);
 }
 
 .videoproject {
   width: 60%;
-  border-radius: 24px
+  border-radius: 24px;
 }
 
 .giftransparency {
-  max-height: 40vh
+  max-height: 40vh;
 }
 
-.footer{
+.footer {
   background-color: var(--color-secondary);
   color: white;
-  border-radius: 64px 64px 0px 0px;
+  border-radius: 64px 64px 0 0;
 }
 
 .logofooter {
   font-size: 64px;
-  font-family: mondwest;
+  font-family: mondwest, sans-serif;
 }
 
 h1 {
-  font-family: "mondwest";
+  font-family: "mondwest", sans-serif;
   font-size: 10vw;
   text-align: center;
   color: white;
@@ -149,23 +154,23 @@ h1 {
 
 h2 {
   font-size: 48px;
-  font-family: mondwest;
+  font-family: mondwest, sans-serif;
 }
 
 h3 {
   font-size: 32px;
-  font-family: mondwest;
+  font-family: mondwest, sans-serif;
 }
 
 h4 {
   font-size: 32px;
-  font-family: sfpro;
+  font-family: sfpro, sans-serif;
   color: white;
 }
 
 h6 {
   font-size: 24px;
-  font-family: mondwest;
+  font-family: mondwest, sans-serif;
 }
 
 p {
@@ -176,11 +181,10 @@ p {
   height: 38px;
   border-radius: 21px;
   border-width: 1px;
-  font-family: 'mondwest';
+  font-family: 'mondwest', sans-serif;
   font-size: 20px;
-  border-color: var(--color-primary);;
+  border-color: var(--color-primary);
   color: var(--color-primary);
-  background-color: none;
   width: 140px;
 }
 
@@ -208,12 +212,12 @@ p {
   height: 80vh;
 }
 
-.videoscroll{
+.videoscroll {
   width: 80%;
   min-height: 100%;
 }
 
-.navlogo{
+.navlogo {
   width: 140px;
 }
 
@@ -226,18 +230,16 @@ p {
   cursor: pointer;
 }
 
-
 @media (max-width: 1270px) {
-
   .nav {
-display: none;
+    display: none;
   }
-
 }
 
-
-
 @media (max-width: 768px) {
+  .bottleneck {
+    background-image: linear-gradient(to bottom right, #25454D, #54858B);
+  }
 
   h1 {
     font-size: 15vw;
@@ -245,7 +247,7 @@ display: none;
 
   h2 {
     font-size: 32px;
-    font-family: mondwest;
+    font-family: mondwest, sans-serif;
     max-width: 300px;
   }
 
@@ -253,8 +255,12 @@ display: none;
     font-size: 24px;
   }
 
-  h4{
+  h4 {
     font-size: 24px;
+  }
+
+  p{
+    font-size: 16px;
   }
 
   .imgmobile img {
@@ -262,41 +268,37 @@ display: none;
     height: auto;
   }
 
-  .videoscroll{
-    width: 90%
+  .videoscroll {
+    width: 90%;
   }
 
   .notification-section {
-    border-radius: 32px 32px 0px 0px;
+    border-radius: 32px 32px 0 0;
   }
 
   .discover-section {
     background-color: white;
     width: 100%;
-    margin: 0px;
-    border-radius: 0px 0px 32px 32px;
+    margin: 0;
+    border-radius: 0;
   }
 
   .hero-section {
     min-height: auto;
   }
 
-  .footer{
+  .footer {
     background-color: var(--color-secondary);
     color: white;
-    border-radius: 50px 50px 0px 0px;
+    border-radius: 32px 32px 0 0;
   }
 
-  .videoproject{
+  .videoproject {
     width: 90%;
-    border-radius: 25px
-  }
-
-  .discover-section {
-    border-radius: 0px 0px 50px 50px;
+    border-radius: 25px;
   }
 
   .giftransparency {
-    width: 90%
+    width: 90%;
   }
 }

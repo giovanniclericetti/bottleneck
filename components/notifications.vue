@@ -15,26 +15,16 @@
     </div>
 
     <div class="mt-5 p-0">
-
       <div class="d-none d-md-block align-baseline">
-
         <video ref="videoElement" class="videoscroll">
           <source src="notifications.mp4" type="video/mp4">
-
         </video>
-
       </div>
 
-      <div class="d-flex d-md-none imgmobile justify-content-center" style="">
-
-        <img src="~assets/img/notifications-static.png">
-
+      <div class="d-flex d-md-none imgmobile justify-content-center">
+        <img src="~assets/img/notifications-static.png" alt="notifications">
       </div>
-
-
     </div>
-
-
   </div>
 </template>
 
@@ -63,8 +53,7 @@ export default {
         }
 
         if (videoVisible) {
-          const newFrame = videoElement.currentTime + scrollDelta * 0.003;
-          videoElement.currentTime = newFrame;
+          videoElement.currentTime = videoElement.currentTime + scrollDelta * 0.003;
         }
 
         previousScrollTop = scrollTop;
@@ -105,7 +94,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-
-</style>
