@@ -24,7 +24,7 @@
       </div>
 
       <div class="nav d-lg-none d-flex justify-content-between align-items-center">
-        <b-img v-b-toggle.sidebar-right src="~assets/svg/icon1.svg" style="height: 40px"></b-img>
+        <b-img v-b-toggle.sidebar-right src="~assets/svg/icon1.svg" style="height: 40px" ></b-img>
 
         <b-sidebar id="sidebar-right" title="" right shadow no-header>
           <div class="px-3">
@@ -53,8 +53,11 @@
     </div>
     <div style="overflow-y: scroll; overflow-x: hidden">
 
+<section>
+  <hero/>
+</section>
+
       <section id="notifications">
-        <hero/>
         <notifications/>
       </section>
 
@@ -82,7 +85,6 @@
         <footerlanding/>
       </section>
 
-    </div>
   </div>
 </template>
 
@@ -107,7 +109,7 @@ export default {
     this.observer = new IntersectionObserver(this.onElementObserved,
       {
         root: this.$el,
-        threshold: 0.5,
+        threshold: 0.4,
       })
   },
   mounted() {
@@ -116,10 +118,11 @@ export default {
       this.observer.observe(section)
     })
   },
-  deforeDestroy() {
-    this.observer.disconnect(),
-      window.removeEventListener("mousemove", this.updateGradient);
+  beforeDestroy() {
+    this.observer.disconnect();
+    window.removeEventListener("mousemove", this.updateGradient);
   },
+
 
   methods: {
     updateGradient(event) {
