@@ -1,10 +1,10 @@
 <template>
   <div style="background-color: #619698;">
 
-    <div class="discover-section pt-2 pb-0">
+    <div class="discover-section pt-2 pb-0 m-0">
       <div class="textbox pt-md-5 pt-5 p-md-0 p-4">
         <div class="d-flex justify-content-center">
-        <h2 class="pt-5">Discover all Bottleneck’s features</h2>
+          <h2 class="pt-5">Discover all Bottleneck’s features</h2>
         </div>
         <div class="d-flex justify-content-center">
           <p style="max-width: 780px">

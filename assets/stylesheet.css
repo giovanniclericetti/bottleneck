@@ -187,6 +187,7 @@ p {
 .btn-big {
   height: 48px;
   border-width: 2px;
+  width: auto;
 }
 
 .btn:hover {
@@ -208,7 +209,8 @@ p {
 }
 
 .videoscroll{
-  width: 60%
+  width: 80%;
+  min-height: 100%;
 }
 
 .navlogo{
@@ -217,6 +219,11 @@ p {
 
 .navlogo img {
   width: 120%;
+}
+
+.footer p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 

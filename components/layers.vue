@@ -1,9 +1,9 @@
 <template>
   <div class="layer-section pt-2 pb-0">
-    <div class="pt-md-5 pt-5 p-md-0 p-4" style="color: var(--color-secondary)">
+    <div class="pt-md-5 pt-0 p-md-0 p-4">
       <div class="d-flex justify-content-center">
         <h2 class="pt-5">Two layers to prevent useless notifications</h2>
-        </div>
+      </div>
       <div class="d-flex justify-content-center">
         <p style="max-width: 700px">
           Bottleneck features two different dashboard layers. One immediately shown,
@@ -14,10 +14,10 @@
       </div>
     </div>
 
-    <div class="my-5 pb-5">
+    <div class="mt-5 pb-5">
       <div class="d-none d-md-block">
-        <video ref="videoElementLayers" class="videoscroll" >
-          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <video ref="videoElementLayers" class="videoscroll">
+          <source src="layers.mp4" type="video/mp4">
         </video>
       </div>
 
@@ -56,7 +56,7 @@ export default {
         }
 
         if (videoVisible) {
-          const newFrame = videoElementLayers.currentTime + scrollDelta * 0.01;
+          const newFrame = videoElementLayers.currentTime + scrollDelta * 0.003;
           videoElementLayers.currentTime = newFrame;
         }
 

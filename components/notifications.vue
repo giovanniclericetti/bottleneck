@@ -1,9 +1,9 @@
 <template>
-  <div class="notification-section pt-2 pb-0">
-    <div class="text-white pt-md-5 pt-5 p-md-0 p-4">
+  <div class="notification-section pt-2 pb-0 m-0">
+    <div class="text-white pt-md-5 pt-0 p-md-0 p-4">
       <div class="d-flex justify-content-center">
-      <h2 class="pt-5 text-white">We feel you: too many notifications, right?</h2>
-        </div>
+        <h2 class="pt-5 text-white">We feel you: too many notifications, right?</h2>
+      </div>
       <div class="d-flex justify-content-center">
         <p style="max-width: 600px" class="text-white">
           We do know how it feels to be overwhelmed by notifications. You try to
@@ -14,14 +14,15 @@
       </div>
     </div>
 
-    <div class="mt-5 pb-0 mb-0">
+    <div class="mt-5 p-0">
 
-      <div class="d-none d-md-block">
+      <div class="d-none d-md-block align-baseline">
 
-      <video ref="videoElement" class="videoscroll">
-        <source src="notifications.mp4" type="video/mp4">
+        <video ref="videoElement" class="videoscroll">
+          <source src="notifications.mp4" type="video/mp4">
 
-      </video>
+        </video>
+
       </div>
 
       <div class="d-flex d-md-none imgmobile justify-content-center" style="">
@@ -32,7 +33,6 @@
 
 
     </div>
-
 
 
   </div>

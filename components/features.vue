@@ -1,7 +1,7 @@
 <template>
-  <div class="features-section pb-5 bg-white">
+  <div class="features-section pt-2 pb-5 bg-white">
 
-    <div class=" pt-md-5 pt-5 p-md-0 p-4">
+    <div class="pt-md-5 pt-0 p-md-0 p-4">
 
       <div class="d-flex justify-content-center">
       <h2 class="pt-5">

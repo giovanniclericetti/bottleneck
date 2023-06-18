@@ -1,7 +1,10 @@
 <template>
   <div class="global-wrapper bottleneck" :style="gradientStyle">
     <div class="nav-container d-flex justify-content-between align-items-center px-md-5 px-3 shadow-sm">
-      <div class="navlogo"> <div href="#hero" @click="scrollToNotifications" style="cursor: pointer"> <img src="~assets/svg/bottleneck.svg">  </div> </div>
+      <div class="navlogo">
+        <div href="#hero" @click="scrollToNotifications" style="cursor: pointer"><img src="~assets/svg/bottleneck.svg">
+        </div>
+      </div>
       <div class="nav d-none d-lg-block">
 
         <b-nav pills card-header v-b-scrollspy:nav-scroller style="background-color: #E9EDED; padding: 4px">
@@ -10,7 +13,8 @@
           <div href="#layers" class="navitem" @click="scrollToLayers">Layers</div>
           <div href="#transparency" class="navitem" @click="scrollToTransparency">Transparency</div>
           <div href="#discover" class="navitem" @click="scrollToDiscover">Discover</div>
-          <span class="glider" :style="{transform: `translateX(${(sections.indexOf(activeSection) || 0) *100}%)`}"></span>
+          <span class="glider"
+                :style="{transform: `translateX(${(sections.indexOf(activeSection) || 0) *100}%)`}"></span>
         </b-nav>
 
       </div>
@@ -24,7 +28,7 @@
       </div>
 
       <div class="nav d-lg-none d-flex justify-content-between align-items-center">
-        <b-img v-b-toggle.sidebar-right src="~assets/svg/icon1.svg" style="height: 40px" ></b-img>
+        <b-img v-b-toggle.sidebar-right src="~assets/svg/icon1.svg" style="height: 40px"></b-img>
 
         <b-sidebar id="sidebar-right" title="" right shadow no-header>
           <div class="px-3">
@@ -53,11 +57,8 @@
     </div>
     <div style="overflow-y: scroll; overflow-x: hidden">
 
-<section>
-  <hero/>
-</section>
-
       <section id="notifications">
+        <hero/>
         <notifications/>
       </section>
 
@@ -80,10 +81,10 @@
       <section>
         <download/>
       </section>
-      </div>
-      <section>
-        <footerlanding/>
-      </section>
+    </div>
+    <section>
+      <footerlanding/>
+    </section>
 
   </div>
 </template>
@@ -137,7 +138,7 @@ export default {
         const id = target.getAttribute('id')
         if (isIntersecting) {
           console.log(id)
-            this.activeSection=id
+          this.activeSection = id
         }
       })
 
