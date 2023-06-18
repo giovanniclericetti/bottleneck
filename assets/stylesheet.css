@@ -295,7 +295,8 @@ p {
 
   .videoproject {
     width: 90%;
-    border-radius: 25px;
+    border-radius: 16px;
+    background-color: rgb(233, 237, 237);
   }
 
   .giftransparency {
