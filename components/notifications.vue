@@ -17,7 +17,7 @@
     <div class="mt-5 p-0">
       <div class="d-none d-md-block align-baseline">
         <video ref="videoElement" class="videoscroll">
-          <source src="notifications.mp4" type="video/mp4">
+          <source src="video/notifications.mp4" type="video/mp4">
         </video>
       </div>
 

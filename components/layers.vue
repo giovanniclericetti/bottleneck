@@ -17,7 +17,7 @@
     <div class="mt-5 pb-5">
       <div class="d-none d-md-block">
         <video ref="videoElementLayers" class="videoscroll">
-          <source src="layers.mp4" type="video/mp4">
+          <source src="video/layers.mp4" type="video/mp4">
         </video>
       </div>
 
