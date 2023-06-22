@@ -13,7 +13,7 @@
       <b-col lg="7" sm="12" class="d-md-flex insertscreen" data-aos="fade-right" data-aos-duration="1000">
 
         <video autoplay muted loop class="videofeature">
-          <source src="video/videosearch.mp4" type="video/mp4">
+          <source src="video/feature1.mp4" type="video/mp4">
         </video>
 
       </b-col>
@@ -49,13 +49,17 @@
         </div>
       </b-col>
       <b-col order="1" order-md="2" lg="7" sm="12" class="d-md-flex insertscreen" data-aos="fade-left" data-aos-duration="1000">
-        <b-img src="~assets/img/feature_2.png" fluid></b-img>
+        <video autoplay muted loop class="videofeature">
+          <source src="video/feature2.mp4" type="video/mp4">
+        </video>
       </b-col>
     </b-row>
 
     <b-row class="p-md-5 px-md-0 mt-md-5 mx-md-5 mx-3 d-md-flex mt-4" align-v="center">
       <b-col lg="7" sm="12" class="d-md-flex insertscreen" data-aos="fade-right" data-aos-duration="1000">
-        <b-img src="~assets/img/feature_3.png" fluid></b-img>
+        <video autoplay muted loop class="videofeature">
+          <source src="video/feature3.mp4" type="video/mp4">
+        </video>
       </b-col>
       <b-col style="text-align: left" class="ml-md-5 mt-4 mt-md-0">
         <h3>Standing by your side</h3>

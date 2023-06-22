@@ -135,9 +135,14 @@ section {
   border-radius: 12px;
 }
 
-.giftransparency {
-  max-height: 40vh;
+.videoloopcentered {
+  max-height: 50vh;
+  max-width: 80%;
+  border-radius: 12px;
+}
 
+.imgtransparency img{
+  max-width: 90%;
 }
 
 .footer {
@@ -219,7 +224,7 @@ p {
 }
 
 .videoscroll {
-  width: 80%;
+  width: 100%;
   min-height: 100%;
 }
 
@@ -291,6 +296,11 @@ p {
 
   .hero-section {
     min-height: auto;
+  }
+
+  .imgtransparency img {
+    min-width: 160%;
+
   }
 
   .footer {

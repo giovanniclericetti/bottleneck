@@ -16,9 +16,8 @@
     </div>
 
     <div class="mt-5 pb-5">
-      <div>
-        <img class="giftransparency" style="max-height: 40vh" data-aos="fade-up" data-aos-duration="1000"
-             src="https://cdn.vox-cdn.com/thumbor/iaVMlcV5rj0OuPejZ7HyqYslLZk=/0x0:800x333/1400x788/filters:focal(334x72:462x200):format(gif)/cdn.vox-cdn.com/uploads/chorus_image/image/55278741/gatsby.0.gif" alt="transparency">
+      <div class="justify-content-center imgtransparency d-flex">
+        <b-img src="~assets/img/transparency.png" data-aos="fade-up" data-aos-duration="1000" class="pr-3 align-self-center"></b-img>
       </div>
     </div>
   </div>

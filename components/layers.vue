@@ -15,14 +15,13 @@
     </div>
 
     <div class="mt-5 pb-5">
-      <div class="d-none d-md-block">
-        <video ref="videoElementLayers" class="videoscroll">
-          <source src="video/layers.mp4" type="video/mp4">
-        </video>
-      </div>
 
-      <div class="d-flex d-md-none imgmobile justify-content-center">
-        <img src="~assets/img/notifications-static.png" alt="layers">
+      <div class="mt-5 pb-5">
+        <div>
+          <video autoplay muted loop class="videoloopcentered">
+            <source src="video/doppiolayer.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
 
     </div>

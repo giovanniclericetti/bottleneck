@@ -15,7 +15,7 @@
     </div>
 
     <div class="mt-5 p-0">
-      <div class="d-none d-md-block align-baseline">
+      <div class="d-none d-md-block" style="background-color: white">
         <video ref="videoElement" class="videoscroll">
           <source src="video/notifications.mp4" type="video/mp4">
         </video>
@@ -53,7 +53,7 @@ export default {
         }
 
         if (videoVisible) {
-          videoElement.currentTime = videoElement.currentTime + scrollDelta * 0.003;
+          videoElement.currentTime = videoElement.currentTime + scrollDelta * 0.002;
         }
 
         previousScrollTop = scrollTop;

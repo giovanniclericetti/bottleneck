@@ -2,7 +2,7 @@
   <div class="download-section py-5">
     <b-row class="p-md-5 px-md-0 mt-md-5 mx-md-5 mx-3 d-md-flex" align-v="center">
       <b-col lg="8" sm="12" class="d-md-flex" data-aos="fade-right" data-aos-duration="1000">
-        <b-img style="width: 100%" src="~assets/img/feature_3.png"></b-img>
+        <b-img style="width: 100%" src="~assets/img/download.png"></b-img>
       </b-col>
       <b-col style="text-align: left" class="ml-md-5 mt-4 mt-md-0">
         <h3 class="text-white">Put a cork in your<br>notifications!</h3>
