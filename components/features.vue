@@ -11,7 +11,11 @@
 
     <b-row class="p-md-5 px-md-0 mt-md-5 mx-md-5 mx-3 d-md-flex" align-v="center">
       <b-col lg="7" sm="12" class="d-md-flex insertscreen" data-aos="fade-right" data-aos-duration="1000">
-        <b-img src="~assets/img/feature_1.png" fluid></b-img>
+
+        <video autoplay muted loop class="videofeature">
+          <source src="video/videosearch.mp4" type="video/mp4">
+        </video>
+
       </b-col>
       <b-col style="text-align: left" class="ml-md-5 mt-4 mt-md-0">
         <h3>Knowing each other</h3>
