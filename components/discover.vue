@@ -14,10 +14,8 @@
         </div>
       </div>
       <div class="pb-5">
-        <div>
-          <video class="videoproject" controls>
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-          </video>
+        <div class="pt-5">
+          <iframe class="videoproject" controls src="https://player.vimeo.com/video/838849711"  frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
